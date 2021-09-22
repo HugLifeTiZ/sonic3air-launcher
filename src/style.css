@@ -36,7 +36,6 @@
   box-shadow: none;
   text-shadow: none;
   transition: none;
-  transform: scaleX(1) scaleY(1) scaleZ(1);
 }
 
 .jagged-start {
@@ -62,14 +61,14 @@ headerbar,
 statuspage .icon,
 statuspage .title,
 statuspage .description {
-  color: @theme_fg_color;
+  color: white;
 }
 
 headerbar:backdrop,
 statuspage:backdrop .icon,
 statuspage:backdrop .title,
 statuspage:backdrop .description {
-  color: @theme_unfocused_fg_color;
+  color: lightgray;
 }
 
 headerbar {
@@ -85,22 +84,18 @@ statuspage button {
 windowcontrols > button:hover,
 statuspage button:hover {
   color: black;
-  background: @theme_fg_color;
+  background: white;
 }
 
 windowcontrols:backdrop > button:hover,
 statuspage:backdrop button:hover {
-  background: @theme_unfocused_fg_color;
-}
-
-statuspage > scrolledwindow > viewport > box > box {
-  border-spacing: 18px 0;
+  background: lightgray;
 }
 
 button.text-button:focus-visible {
-  outline-color: @theme_fg_color;
+  outline-color: white;
 }
 
 button.text-button:focus-visible:backdrop {
-  outline-color: @theme_unfocused_fg_color;
+  outline-color: lightgray;
 }
