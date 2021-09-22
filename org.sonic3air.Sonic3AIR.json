@@ -1,8 +1,8 @@
 {
     "app-id" : "org.sonic3air.Sonic3AIR",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "40",
-    "sdk" : "org.gnome.Sdk",
+    "runtime" : "org.freedesktop.Platform",
+    "runtime-version" : "21.08",
+    "sdk" : "org.freedesktop.Sdk",
     "command" : "sonic3air",
     "finish-args" : [
         "--share=ipc",
