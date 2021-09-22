@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <requires lib="gtk" version="4.0"/>
+  <requires lib="gtk" version="3.24"/>
   <template class="Sonic3Window" parent="HdyApplicationWindow">
     <property name="title">Sonic 3: Angel Island Revisited</property>
     <property name="default-width">800</property>
-    <property name="default-height">576</property>
+    <property name="default-height">600</property>
     <child>
       <object class="GtkBox">
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkHeaderBar"/>
+          <object class="GtkHeaderBar">
+            <property name="show-close-button">true</property>
+            <property name="title">No Way? No Way!</property>
+            <property name="has-subtitle">false</property>
+          </object>
         </child>
         <child>
           <object class="GtkOverlay">
             <property name="vexpand">True</property>
-            <property name="overflow">hidden</property>
             <child>
               <object class="GtkBox">
                 <property name="orientation">vertical</property>
@@ -36,6 +39,7 @@ If your Steam install is in an unusual place, please locate the game's ROM file 
                       <object class="GtkBox">
                         <property name="homogeneous">True</property>
                         <property name="halign">center</property>
+                        <property name="spacing">24</property>
                         <child>
                           <object class="GtkButton">
                             <property name="label" translatable="yes">Steam Store page</property>
@@ -56,7 +60,6 @@ If your Steam install is in an unusual place, please locate the game's ROM file 
             </child>
             <child type="overlay">
               <object class="GtkBox">
-                <property name="can-target">False</property>
                 <property name="valign">start</property>
                 <style>
                   <class name="jagged-start"/>
@@ -65,7 +68,6 @@ If your Steam install is in an unusual place, please locate the game's ROM file 
             </child>
             <child type="overlay">
               <object class="GtkBox">
-                <property name="can-target">False</property>
                 <property name="valign">end</property>
                 <style>
                   <class name="jagged-end"/>

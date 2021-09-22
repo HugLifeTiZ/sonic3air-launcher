@@ -3,9 +3,14 @@
 100% { background-position: 50% calc(50% - 24px), calc(50% + 24px) 50%; }
 }
 
-@keyframes jagged-move {
+@keyframes jagged-left {
 0% { background-position: 50% bottom, 50% bottom; }
 100% { background-position: calc(50% - 24px) bottom, calc(50% - 24px) bottom; }
+}
+
+@keyframes jagged-right {
+0% { background-position: 50% bottom, 50% bottom; }
+100% { background-position: calc(50% + 24px) bottom, calc(50% + 24px) bottom; }
 }
 
 .checkered {
@@ -34,18 +39,23 @@
   transform: scaleX(1) scaleY(1) scaleZ(1);
 }
 
-.jagged-start, .jagged-end {
+.jagged-start {
   background: linear-gradient(135deg, black 25%, transparent 25%) 0 0%,
               linear-gradient(225deg, black 25%, transparent 25%) 0 0%;
+  animation: jagged-left infinite linear 1s;
+}
+
+.jagged-end {
+  background: linear-gradient(315deg, black 25%, transparent 25%) 0 0%,
+              linear-gradient(405deg, black 25%, transparent 25%) 0 0%;
+  animation: jagged-right infinite linear 1s;
+}
+
+.jagged-start, .jagged-end {
   background-repeat: repeat-x;
   background-position: 50% bottom, 50% bottom;
   background-size: 24px 24px, 24px 24px;
   padding-bottom: 24px;
-  animation: jagged-move infinite linear 1s;
-}
-
-.jagged-end {
-  transform: rotate(180deg);
 }
 
 headerbar,

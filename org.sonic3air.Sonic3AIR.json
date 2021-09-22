@@ -79,8 +79,8 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/HugLifeTiZ/sonic3air-launcher.git"
+                    "type" : "dir",
+                    "path" : "/home/tiz/src/sonic3air-launcher"
                 }
             ]
         }

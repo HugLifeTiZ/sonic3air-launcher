@@ -45,7 +45,7 @@ G_DEFINE_TYPE (Sonic3Window, sonic3_window, HDY_TYPE_APPLICATION_WINDOW)
 static void
 steam_button_clicked_cb (Sonic3Window *self)
 {
-  gtk_show_uri (GTK_WINDOW (self), STEAM_URL, GDK_CURRENT_TIME);
+  gtk_show_uri_on_window (GTK_WINDOW (self), STEAM_URL, GDK_CURRENT_TIME, NULL);
 }
 
 static void

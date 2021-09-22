@@ -47,7 +47,7 @@ on_startup (__attribute__ ((unused)) GtkApplication *app)
   hdy_init ();
 
   gtk_css_provider_load_from_resource (css_provider, "/org/sonic3air/Sonic3AIR/style.css");
-  gtk_style_context_add_provider_for_display (gdk_display_get_default (),
+  gtk_style_context_add_provider_for_screen (gdk_screen_get_default (),
                                               GTK_STYLE_PROVIDER (css_provider),
                                               GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }
@@ -71,7 +71,7 @@ on_activate (GtkApplication *app)
                            NULL);
 
   /* Ask the window manager/compositor to present the window. */
-  gtk_window_present (window);
+  gtk_widget_show_all (GTK_WIDGET(window));
 }
 
 int
