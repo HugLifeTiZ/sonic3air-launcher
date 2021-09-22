@@ -44,7 +44,7 @@ on_startup (__attribute__ ((unused)) GtkApplication *app)
 
   g_object_set (settings, "gtk-application-prefer-dark-theme", TRUE, NULL);
 
-  adw_init ();
+  hdy_init ();
 
   gtk_css_provider_load_from_resource (css_provider, "/org/sonic3air/Sonic3AIR/style.css");
   gtk_style_context_add_provider_for_display (gdk_display_get_default (),

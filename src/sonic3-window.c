@@ -37,10 +37,10 @@
 
 struct _Sonic3Window
 {
-  AdwApplicationWindow  parent_instance;
+  HdyApplicationWindow  parent_instance;
 };
 
-G_DEFINE_TYPE (Sonic3Window, sonic3_window, ADW_TYPE_APPLICATION_WINDOW)
+G_DEFINE_TYPE (Sonic3Window, sonic3_window, HDY_TYPE_APPLICATION_WINDOW)
 
 static void
 steam_button_clicked_cb (Sonic3Window *self)

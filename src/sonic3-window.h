@@ -29,12 +29,12 @@
 
 #pragma once
 
-#include <adwaita.h>
+#include <handy.h>
 
 G_BEGIN_DECLS
 
 #define SONIC3_TYPE_WINDOW (sonic3_window_get_type())
 
-G_DECLARE_FINAL_TYPE (Sonic3Window, sonic3_window, SONIC3, WINDOW, AdwApplicationWindow)
+G_DECLARE_FINAL_TYPE (Sonic3Window, sonic3_window, SONIC3, WINDOW, HdyApplicationWindow)
 
 G_END_DECLS

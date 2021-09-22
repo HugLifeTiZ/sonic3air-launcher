@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <template class="Sonic3Window" parent="AdwApplicationWindow">
+  <template class="Sonic3Window" parent="HdyApplicationWindow">
     <property name="title">Sonic 3: Angel Island Revisited</property>
     <property name="default-width">800</property>
     <property name="default-height">576</property>
@@ -22,7 +22,7 @@
                   <class name="checkered"/>
                 </style>
                 <child>
-                  <object class="AdwStatusPage">
+                  <object class="HdyStatusPage">
                     <property name="vexpand">True</property>
                     <property name="icon-name">eggman-symbolic</property>
                     <property name="title" translatable="yes">Game Over</property>

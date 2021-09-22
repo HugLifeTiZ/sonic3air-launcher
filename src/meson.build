@@ -7,10 +7,10 @@ sonic3_sources = [
 
 sonic3_deps = [
   dependency('gio-2.0', version: '>= 2.50'),
-  dependency('gtk4', version: '>= 4.0'),
+  dependency('gtk3', version: '>= 3.24'),
   dependency('gstreamer-1.0', version: '>= 1.6.0'),
   dependency('libarchive'),
-  dependency('libadwaita-1', version: '>= 1.0'),
+  dependency('libhandy-1', version: '>= 1.0'),
 ]
 
 gnome = import('gnome')

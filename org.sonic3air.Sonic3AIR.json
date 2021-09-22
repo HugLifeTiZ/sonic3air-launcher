@@ -1,7 +1,7 @@
 {
     "app-id" : "org.sonic3air.Sonic3AIR",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "master",
+    "runtime-version" : "40",
     "sdk" : "org.gnome.Sdk",
     "command" : "sonic3air",
     "finish-args" : [
@@ -30,7 +30,7 @@
     ],
     "modules" : [
         {
-            "name" : "libadwaita",
+            "name" : "libhandy",
             "buildsystem" : "meson",
             "config-opts" : [
                 "-Dexamples=false",
@@ -40,8 +40,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit" : "ffb6b435c7da83c210a8f8a53af5082f6ed3816b"
+                    "url" : "https://gitlab.gnome.org/GNOME/libhandy.git",
+                    "commit" : "f8626427acebfa08b2b4ee1166d51e416d3d7407"
                 }
             ]
         },
@@ -80,7 +80,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://github.com/Kekun/sonic3air-launcher.git"
+                    "url" : "https://github.com/HugLifeTiZ/sonic3air-launcher.git"
                 }
             ]
         }
