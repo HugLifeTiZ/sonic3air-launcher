@@ -28,7 +28,7 @@
           <li>Fixes for audio-related issues, including random crashes</li>
           <li>Fix for the flamethrower sound occasionally glitching out to high pitched noise</li>
           <li>Fix for Blue Spheres music speed progression when using emulated soundtrack</li>
-          <li>Fix for the blue spheres extreme lag bug from original S&K</li>
+          <li>Fix for the blue spheres extreme lag bug from original S&amp;K</li>
           <li>Fixed missing spindash release sound for Tails in competition mode</li>
           <li>To be more in line with Sonic Mania, Tails can now catch you again unless you keep holding Down, when using Mania-style Tails Assist</li>
           <li>Added cheat sheet for game hotkeys when pressing F1 (lists dev mode hotkeys as well when it's active)</li>
@@ -41,7 +41,7 @@
           <li>Fix for a bug in MHZ's vine wrap that could cause you to end up hovering inside them</li>
           <li>Made SOZ pyramid rising a skippable cutscene</li>
           <li>Fixed that rising sand in SOZ 2 could be glitched out if triggered by a Super Flicky</li>
-          <li>Fix for an object spawn issue from original S3&K causing e.g. a missing corner sprite in the first SOZ 2 rising sand section</li>
+          <li>Fix for an object spawn issue from original S3&amp;K causing e.g. a missing corner sprite in the first SOZ 2 rising sand section</li>
           <li>Fixed that you could get hit by the lava despite landing on a platform above it in one place in LRZ 1</li>
           <li>Fixed some issues in the first DDZ boss, including a possible softlock</li>
           <li>Modding: Added a lot of debugging features from Oxygen Engine directly into Sonic 3 A.I.R. when dev mode is active</li>
@@ -66,7 +66,7 @@
           <li>Supporting more keys for custom keyboard bindings (see the Manual for a complete list)</li>
           <li>Reduced LRZ 2 boss hit points down to 8, going back to the original value of 14 is an option</li>
           <li>Larger parts of the cutscenes in HPZ and the start of SSZ are now skippable</li>
-          <li>Ported over missing code for a continue screen from S&K when playing as Sonic alone</li>
+          <li>Ported over missing code for a continue screen from S&amp;K when playing as Sonic alone</li>
           <li>Fix for a crash with certain game controllers</li>
           <li>Fix for a crash in Mods menu when trying to move the "None" placeholder entry</li>
           <li>Fixed that too many small bubbles could prevent object spawning in parts of HCZ 1</li>
@@ -76,7 +76,7 @@
           <li>Fixed that fast forwarding was available in Data Select after exiting to menu from the game outro</li>
           <li>Fix for a potential soft-lock when Super/Hyper transforming right when hitting the ground</li>
           <li>Fixed that Blue Sphere game stage was not saved after entering a stage code</li>
-          <li>Various smaller bug fixes, for both original S3&K bugs and S3AIR-specific issues</li>
+          <li>Various smaller bug fixes, for both original S3&amp;K bugs and S3AIR-specific issues</li>
           <li>Rendering performance optimizations, especially for OpenGL Software rendering (though Hardware is still faster)</li>
           <li>Script / game simulation performance optimizations</li>
           <li>Error message boxes can now be cancelled (again), so they don't reappear over and over again in case of repeating errors</li>
@@ -85,7 +85,7 @@
           <li>Modding: Added function "Renderer.drawCustomSpriteWithTransform" for script modding</li>
           <li>Modding: Added function "System.hasPlatformFlag" to differentiate between mobile and desktop versions, and also "PlatformFlags" override in config.json</li>
           <li>Modding: Added support for preprocessor conditions like "#if GAMEAPP >= 0x21050800" so a mod can use newer update's script functions but still stay compatible with the previous update</li>
-          <li>Modding: Added support for SMPS audio file playback via S3&K sound driver emulation</li>
+          <li>Modding: Added support for SMPS audio file playback via S3&amp;K sound driver emulation</li>
         </ul>
       </description>
     </release>
